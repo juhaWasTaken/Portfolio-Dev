@@ -1,0 +1,87 @@
+<nav class="responsive p-[20px] bg-[#0F0F0F]">
+    <div class="nav-mob flex items-center w-auto h-[19px]">
+        <h2 class="font-bold text-[16px] text-white uppercase w-[500px] tracking-[-.04em]">Carlos Gallaga</h2>
+        
+        <div class="container-mob flex justify-between w-full">
+            <p class="portfolio text-white text-[16px] uppercase font-normal tracking-[-.04em]">Portfolio 2024</p>
+            
+            <div class="flex flex-col">
+                <div class="menu cursor-pointer hidden" id="menuIcon">
+                    <div class="w-[22px] h-[2px] bg-white rounded-[1px] mb-1 line1"></div>
+                    <div class="w-[22px] h-[2px] bg-white rounded-[1px] mb-1 line2"></div>
+                    <div class="w-[22px] h-[2px] bg-white rounded-[1px] line3"></div>
+                    
+                </div>
+            
+                <div class="sites flex gap-4">
+                    <a class="text-[16px] uppercase text-[#B3B3B3]" href="/projects">Projects</a>
+                    <a class="text-[16px] uppercase text-[#B3B3B3]" href="/about">About Me</a>
+                    <a class="text-[16px] uppercase text-[#B3B3B3]" href="/contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden navLinks" id="navLinks">
+        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal" href="/projects">Projects</a>
+        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6" href="/about">About Me</a>
+        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6" href="/contact">Contact</a>
+    </div>    
+</nav>
+
+<script src="../scripts/index.js"></script>
+
+<style>
+
+    @media (max-width: 809px) {
+        .responsive {
+            padding: 20px 15px; 
+        }
+
+        .portfolio, .sites {
+            display: none; /* Hides the text in small devices*/
+        }
+
+        .menu{
+            display: block; /* Makes menu apper */
+        }
+
+        .nav-mob {
+            justify-content: space-between; /* Aligns the menu to the right */
+        }
+
+        .container-mob {
+            width: auto; /* Makes the container take the remaining space */
+        }
+
+        /* ANIMACION DEL MENU */
+
+        .menuIcon {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .line1, .line2, .line3 {
+            transition: all 0.3s ease;
+        }
+
+        .toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 3px);
+        }
+
+        .toggle .line2 {
+            opacity: 0;
+        }
+
+        .toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -4px);
+        }
+
+        .active {
+            display: block;
+            gap: 24px;
+            margin-top: 20px;
+            text-align: end;
+        }
+    }
+</style>
