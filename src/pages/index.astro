@@ -6,8 +6,25 @@ import Header from '../components/header.astro';
 
 <Layout title="Carlos Gallaga Portfolio" description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
 	<Navbar />
-	<main>
-		<Header />
+	<Header />
+	
+	<main class="px-5">
+		<div class="flex justify-between">
+			<h2 class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">Highlighted Works </h2>
+			<p class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">(2023 - 2024)</p>
+		</div>
+		<section>
+			<ul >
+				<li class="flex flex-col">
+					<a class="text-white" href="./blog/nile">Nile</a>
+					<a class="text-white" href="./blog/hotelblog">HotelBlog</a>
+					<a class="text-white" href="./blog/azconstruccion">AZ Construcción</a>
+					<a class="text-white" href="./blog/innovabank">InnovaBank</a>
+					<a class="text-white" href="./blog/portfolio">Portfolio</a>
+					<a class="text-white" href="./blog/split">Split</a>
+				</li>
+			</ul>
+		</section>
 	</main>
 </Layout>
 

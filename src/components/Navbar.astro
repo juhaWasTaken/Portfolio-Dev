@@ -1,6 +1,6 @@
 <nav class="responsive p-[20px] bg-[#0F0F0F]">
     <div class="nav-mob flex items-center w-auto h-[19px]">
-        <h2 class="font-bold text-[16px] text-white uppercase w-[500px] tracking-[-.04em]">Carlos Gallaga</h2>
+        <h2 class="font-bold text-[16px] text-white uppercase w-[500px] tracking-[-.04em]"><a href="/">Carlos Gallaga</a></h2>
         
         <div class="container-mob flex justify-between w-full">
             <p class="portfolio text-white text-[16px] uppercase font-normal tracking-[-.04em]">Portfolio 2024</p>
@@ -14,23 +14,33 @@
                 </div>
             
                 <div class="sites flex gap-4">
-                    <a class="text-[16px] uppercase text-[#B3B3B3]" href="/projects">Projects</a>
-                    <a class="text-[16px] uppercase text-[#B3B3B3]" href="/about">About Me</a>
-                    <a class="text-[16px] uppercase text-[#B3B3B3]" href="/contact">Contact</a>
+                    <a class="text-[16px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal hover:text-white" href="/projects">Projects</a>
+                    <a class="text-[16px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal hover:text-white" href="/about">About Me</a>
+                    <a class="text-[16px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal hover:text-white" href="/contact">Contact</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="hidden navLinks" id="navLinks">
-        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal" href="/projects">Projects</a>
-        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6" href="/about">About Me</a>
-        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6" href="/contact">Contact</a>
+        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal hover:text-white" href="/projects">Projects</a>
+        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6 hover:text-white" href="/about">About Me</a>
+        <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6 hover:text-white" href="/contact">Contact</a>
     </div>    
 </nav>
 
 <script src="../scripts/index.js"></script>
 
 <style>
+
+    /* STICKY NAVIGATION */
+    .responsive {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    /* RESPONSIVE NAVIGATION */
 
     @media (max-width: 809px) {
         .responsive {

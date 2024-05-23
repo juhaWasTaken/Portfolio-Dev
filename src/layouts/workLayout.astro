@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+
+const { frontmatter } = Astro.props;
+
+const {title, client, category, year, link } = frontmatter;
+---
+
+<Layout title={title} description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
+	<Navbar />
+	<header class="px-5 mb-[115px]">
+        <h1 class="text-[80px] font-semibold tracking-[-.04em] uppercase text-white w-fit title">{title}</h1>
+    </header>
+	
+	<main class="px-5 text-white text-[18px]">
+        <div class="w-full flex justify-between items-center gap-[60px] datos">
+            <div class="desc-mob">
+                <h3 class="text-[#B3B3B3] uppercase tracking-[-.04em] text-[16px] mb-5 title-mob">Description</h3>
+                <div class="max-w-[420px] text-lg tracking-[-.04em] leading-[1.2em] txt-mob">
+                    <slot />
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-5 w-[50%] info-mob">
+                <div class="flex justify-between border-b-[1px] border-[#333333] pb-5">
+                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">Client</p>
+                    <p class="text-white text-lg leading-[1.2em] tracking-[-.04em] info-txts">{client}</p>
+                </div>
+                <div class="flex justify-between border-b-[1px] border-[#333333] pb-5">
+                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">Category</p>
+                    <p class="text-white text-lg leading-[1.2em] tracking-[-.04em] info-txts">{category}</p>
+                </div>
+                <div class="flex justify-between border-b-[1px] border-[#333333] pb-5">
+                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">Year</p>
+                    <p class="text-white text-lg leading-[1.2em] tracking-[-.04em] info-txts">{year}</p>
+                </div>
+                <div class="flex justify-between ">
+                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">Link</p>
+                    <a target="_blank" href={link} class="text-white text-lg leading-[1.2em] tracking-[-.04em] info-txts">Website</a>
+                </div>
+            </div>
+        </div>
+	</main>
+</Layout>
+
+<style>
+    @media (max-width: 1199px) {
+        .title {
+            font-size: 64px;
+        }
+    }
+
+    @media (max-width: 809px) {
+        .title {
+            font-size: 46px;
+        }
+        .datos {
+            flex-direction: column;
+            align-items: start;
+        }
+        .info-mob {
+            width: 100%;
+        }
+        .title-mob {
+            font-size: 14px;
+        }
+        .txt-mob, .info-txts {
+            font-size: 16px;
+        }
+    }
+</style>
