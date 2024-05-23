@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Header from '../components/header.astro';
+
 ---
 
 <Layout title="Carlos Gallaga Portfolio" description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
@@ -9,7 +10,7 @@ import Header from '../components/header.astro';
 	<Header />
 	
 	<main class="px-5">
-		<div class="flex justify-between">
+		<div class="flex justify-between work-sec">
 			<h2 class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">Highlighted Works </h2>
 			<p class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">(2023 - 2024)</p>
 		</div>
@@ -26,6 +27,27 @@ import Header from '../components/header.astro';
 			</ul>
 		</section>
 	</main>
-</Layout>
+</Layout> 
+
+<style>
+	@media (max-width: 1199px) {
+		.work-sec p, h2 {
+			font-size: 28px
+		}
+	}
+
+	@media (max-width: 809px) {
+		.work-sec {
+			flex-direction: column;
+			h2 {
+				overflow: hidden;
+			}
+		}
+		.work-sec p, h2 {
+			font-size: 24px;
+		}
+		
+	}
+</style>
 
 

@@ -3,8 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 
 const { frontmatter } = Astro.props;
-
-const {title, client, category, year, link } = frontmatter;
+const {title, client, category, year, link, image, image1 } = frontmatter;
 ---
 
 <Layout title={title} description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
@@ -41,6 +40,19 @@ const {title, client, category, year, link } = frontmatter;
                 </div>
             </div>
         </div>
+
+        <section class="flex flex-col gap-5">
+            <img src={image} alt={title} class="w-full h-auto mt-[30px]" loading="lazy">
+            
+            <div class="grid grid-cols-2 grid-rows-1 gap-5 h-auto grid-mob">
+                <img src={image1} alt={title} class="w-full h-auto" loading="lazy">
+                <img src={image} alt={title} class="w-full h-auto" loading="lazy">
+            </div>
+    
+            <img src={image1} alt={title} class="w-full h-auto" loading="lazy">
+        </section>
+
+
 	</main>
 </Layout>
 
@@ -48,6 +60,13 @@ const {title, client, category, year, link } = frontmatter;
     @media (max-width: 1199px) {
         .title {
             font-size: 64px;
+        }
+        .grid-mob {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            grid-template-rows: repeat(2, minmax(0, 1fr));
+        }
+        .grid-mob img:last-child {
+            margin-top: 0;
         }
     }
 
