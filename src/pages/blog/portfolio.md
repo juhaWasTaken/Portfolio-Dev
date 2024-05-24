@@ -5,6 +5,14 @@ client: Freelance
 category: Website
 year: 2024
 link: https://portafoliocarlosgallaga.framer.website/
+image:  {
+    src: "/images/innova.png",
+    alt: "Login screen InnovaBank"
+}
+image1:  {
+    src: "/images/innova-1.png",
+    alt: "Home page InnovaBank"
+}
 ---
 
 I designed the Bento Grid as a minimalist and professional alternative for a Bento style project. Focused on simplicity and elegance, this design seeks to combine minimalist aesthetics with the functionality necessary for a professional and attractive result.

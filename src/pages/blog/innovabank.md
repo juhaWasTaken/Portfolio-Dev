@@ -5,6 +5,14 @@ client: Freelance
 category: Branding
 year: 2023
 link: https://innovabank.framer.website/
+image:  {
+    src: "/images/innova.png",
+    alt: "Login screen InnovaBank"
+}
+image1:  {
+    src: "/images/innova-1.png",
+    alt: "Home page InnovaBank"
+}
 ---
 
 I designed a captivating landing page for InnovaBank, a banking company, to promote the download of their mobile app.

@@ -1,0 +1,135 @@
+---
+
+---
+<section class="flex flex-col gap-[100px] pt-[100px] border-b-[#333333] border-b-[1px] pb-[30px]">
+    <section class="flex flex-col gap-[30px]">
+        <h2 class="abt-tlt font-semibold text-white uppercase text-[32px] tracking-[-.04em]">About me</h2>
+        <p class="abt-txt text-white text-[18px] tracking-[-.04em] leading-[1.2em] max-w-[550px]">Behind every design there is a designer with a vision. I'm Carlos Gallaga, a graphic designer passionate about UX/UI design, fueled by innovation and detail. <br> <br> I seek to understand the needs and desires of my clients to create websites that not only reflect their identity and vision, but also generate meaningful connections with their users.</p>
+    </section>
+    <section class="flex serv-sec">
+        <div class="w-[25%]">
+            <p class="w-fit uppercase text-[#B3B3B3] text-[16px] tracking-[-.04em] leading-[1.2em] serv-tlt">Services</p>
+        </div>
+
+        <div class="flex w-full servs-txt">
+            <div class="flex flex-col w-[37%] gap-5 txts-svs">
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web Design</p>
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Branding</p>
+            </div>
+            <div class="flex flex-col w-[37%] gap-5 txts-svs">
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web Development</p>
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Product Design</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex exp-mob">
+        <div class="w-[25%]">
+            <p class="w-fit uppercase text-[#B3B3B3] text-[16px] tracking-[-.04em] leading-[1.2em] exp-sec">Experience</p>
+        </div>
+        <div class="w-full flex flex-col gap-5">
+            <div class="flex border-b-[#333333] border-b-[1px] pb-5">
+                <div class="w-full flex expWor">
+                    <div class="w-full">
+                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">UX/UI Designer</p>
+                    </div>
+                    <div class="w-full">
+                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Freelancer</p>
+                    </div>
+                </div>
+                <div class="w-[33%]">
+                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">December 2023 - Currently</p>
+                </div>
+            </div>
+
+            <div class="flex border-b-[#333333] border-b-[1px] pb-5">
+                <div class="w-full flex expWor">
+                    <div class="w-full">
+                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">JG & Servicios y Proyectos </p>
+                    </div>
+                    <div class="w-full">
+                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web developer</p>
+                    </div>
+                </div>
+                <div class="w-[33%]">
+                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">April – November (2023)</p>
+                </div>
+            </div>
+
+            <div class="flex  pb-5">
+                <div class="w-full flex expWor">
+                    <div class="w-full">
+                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Fryam AC</p>
+                    </div>
+                    <div class="w-full">
+                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web Designer</p>
+                    </div>
+                </div>
+                <div class="w-[33%]">
+                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">January - March (2023)</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</section>
+
+<style>
+	@media (max-width: 1199px) {
+		.work-sec p, h2 {
+			font-size: 28px
+		}
+		.abt-tlt {
+			font-size: 28px;
+		}
+	}
+
+	@media (max-width: 809px) {
+		.abt-tlt {
+			font-size: 24px;
+		}
+		.abt-txtm, .txt-secs {
+			font-size: 16px;
+		}
+		.serv-tlt, .exp-sec {
+			font-size: 14px;
+		}
+		.work-sec {
+			flex-direction: column;
+			h2 {
+				overflow: hidden;
+			}
+		}
+		.work-sec p, h2 {
+			font-size: 24px;
+		}
+		.work-lay {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+
+		.servs-txt {
+			align-items: center;
+		}
+
+		.expWor {
+			flex-direction: column;
+			gap: 10px;
+		}
+		.exp-mob, .serv-sec {
+			flex-direction: column;
+			gap: 40px;
+		}
+	}
+
+	@media (max-width: 328px) {
+		.txts-svs {
+			gap: 12px;
+		}
+		.servs-txt {
+			flex-direction: column;
+			align-items: start;
+			gap: 12px;
+		}
+	}
+</style>

@@ -2,30 +2,30 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Header from '../components/header.astro';
-
+import About from '../components/about.astro';
+import CardWork from '../components/cardWork.astro';
+const allWorks = await Astro.glob('./blog/*.md');
+console.log(allWorks);
 ---
 
 <Layout title="Carlos Gallaga Portfolio" description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
 	<Navbar />
 	<Header />
 	
-	<main class="px-5">
-		<div class="flex justify-between work-sec">
+	<main class="px-5 mb-20">
+		<div class="flex justify-between work-sec mb-[30px]">
 			<h2 class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">Highlighted Works </h2>
 			<p class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">(2023 - 2024)</p>
 		</div>
-		<section>
-			<ul >
-				<li class="flex flex-col">
-					<a class="text-white" href="./blog/nile">Nile</a>
-					<a class="text-white" href="./blog/hotelblog">HotelBlog</a>
-					<a class="text-white" href="./blog/azconstruccion">AZ Construcción</a>
-					<a class="text-white" href="./blog/innovabank">InnovaBank</a>
-					<a class="text-white" href="./blog/portfolio">Portfolio</a>
-					<a class="text-white" href="./blog/split">Split</a>
-				</li>
-			</ul>
+		<section class="work-lay grid grid-cols-2 grid-rows-3 gap-5 border-b-[1px] pb-[30px] border-b-[#333333]">
+
+			{
+				allWorks.map((work) => <CardWork frontmatter={work.frontmatter} url={work.url} />)
+			} 
 		</section>
+
+		<About />
+
 	</main>
 </Layout> 
 
@@ -46,7 +46,9 @@ import Header from '../components/header.astro';
 		.work-sec p, h2 {
 			font-size: 24px;
 		}
-		
+		.work-lay {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
 	}
 </style>
 
