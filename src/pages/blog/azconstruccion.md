@@ -6,12 +6,20 @@ category: Design
 year: 2023
 link: https://azconstrucciones.framer.website/
 image:  {
-    src: "/images/innova.png",
-    alt: "Login screen InnovaBank"
+    src: "/AZ/0AZ.png",
+    alt: "Home page AZ Construction"
 }
 image1:  {
-    src: "/images/innova-1.png",
-    alt: "Home page InnovaBank"
+    src: "/AZ/1AZ.png",
+    alt: "Home page mobile"
+}
+image2:  {
+    src: "/AZ/2AZ.png",
+    alt: "Different mobile pages"
+}
+image3:  {
+    src: "/AZ/3AZ.png",
+    alt: "AZ Works"
 }
 ---
 

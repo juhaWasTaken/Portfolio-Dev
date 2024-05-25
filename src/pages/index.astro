@@ -4,15 +4,16 @@ import Navbar from '../components/Navbar.astro';
 import Header from '../components/header.astro';
 import About from '../components/about.astro';
 import CardWork from '../components/cardWork.astro';
+import Contact from '../components/contact.astro';
+import Footer from '../components/footer.astro';
 const allWorks = await Astro.glob('./blog/*.md');
-console.log(allWorks);
 ---
 
 <Layout title="Carlos Gallaga Portfolio" description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
 	<Navbar />
 	<Header />
 	
-	<main class="px-5 mb-20">
+	<main id="projects" class="px-5">
 		<div class="flex justify-between work-sec mb-[30px]">
 			<h2 class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">Highlighted Works </h2>
 			<p class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">(2023 - 2024)</p>
@@ -26,7 +27,11 @@ console.log(allWorks);
 
 		<About />
 
+		<Contact />
 	</main>
+
+	<Footer />
+
 </Layout> 
 
 <style>
@@ -37,6 +42,9 @@ console.log(allWorks);
 	}
 
 	@media (max-width: 809px) {
+		main {
+			padding: 0 15px;
+		}
 		.work-sec {
 			flex-direction: column;
 			h2 {

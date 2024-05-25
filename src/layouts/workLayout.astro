@@ -1,10 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import Contact from '../components/contact.astro';
+import Footer from '../components/footer.astro';
 import { Image } from 'astro:assets';
 
 const { frontmatter } = Astro.props;
-const {title, client, category, year, link, image, image1 } = frontmatter;
+const {title, client, category, year, link, image, image1, image2, image3 } = frontmatter; 
 ---
 
 <Layout title={title} description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
@@ -47,12 +49,14 @@ const {title, client, category, year, link, image, image1 } = frontmatter;
             
             <div class="grid grid-cols-2 grid-rows-1 gap-5 h-auto grid-mob">
                 <Image src={image1.src} alt={image1.alt} width="100" height="100" class="w-full h-auto" loading="lazy" format='avif' />
-                <Image src={image.src} alt={image.alt} width="100" height="100" class="w-full h-auto" loading="lazy" format='avif' />
+                <Image src={image2.src} alt={image2.alt} width="100" height="100" class="w-full h-auto" loading="lazy" format='avif' />
             </div>
     
-            <Image src={image1.src} alt={image1.alt} width="100" height="100" class="w-full h-auto" loading="lazy" format='avif' />
+            <Image src={image3.src} alt={image3.alt} width="100" height="100" class="w-full h-auto" loading="lazy" format='avif' />
         </section>
 
+        <Contact />
+        <Footer />
 
 	</main>
 </Layout>

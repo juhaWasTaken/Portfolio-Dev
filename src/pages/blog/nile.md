@@ -6,12 +6,20 @@ category: Design
 year: 2024
 link: https://nilegymidea.framer.website/
 image:  {
-    src: "/images/innova.png",
-    alt: "Login screen InnovaBank"
+    src: "/nile/hmNILE.png",
+    alt: "Home page HotelBlog"
 }
 image1:  {
-    src: "/images/innova-1.png",
-    alt: "Home page InnovaBank"
+    src: "/nile/testNILE.png",
+    alt: "Pages mobile"
+}
+image2:  {
+    src: "/nile/perksNILE.png",
+    alt: "Different mobile pages"
+}
+image3:  {
+    src: "/nile/prgNILE.png",
+    alt: "AZ Works"
 }
 
 ---

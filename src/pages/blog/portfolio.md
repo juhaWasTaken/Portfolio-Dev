@@ -6,12 +6,20 @@ category: Website
 year: 2024
 link: https://portafoliocarlosgallaga.framer.website/
 image:  {
-    src: "/images/innova.png",
-    alt: "Login screen InnovaBank"
+    src: "/portfolio/hmcntPORT.png",
+    alt: "Home page HotelBlog"
 }
 image1:  {
-    src: "/images/innova-1.png",
-    alt: "Home page InnovaBank"
+    src: "/portfolio/homePORT.png",
+    alt: "Pages mobile"
+}
+image2:  {
+    src: "/portfolio/abtdPORT.png",
+    alt: "Different mobile pages"
+}
+image3:  {
+    src: "/portfolio/hmPORT.png",
+    alt: "AZ Works"
 }
 ---
 

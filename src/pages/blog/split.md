@@ -6,12 +6,20 @@ category: Design
 year: 2023
 link: https://splitidea3d.framer.website/
 image:  {
-    src: "/images/innova.png",
-    alt: "Login screen InnovaBank"
+    src: "/split/hmSPLIT.png",
+    alt: "Home page HotelBlog"
 }
 image1:  {
-    src: "/images/innova-1.png",
-    alt: "Home page InnovaBank"
+    src: "/split/1SPLIT.png",
+    alt: "Pages mobile"
+}
+image2:  {
+    src: "/split/2SPLIT.png",
+    alt: "Different mobile pages"
+}
+image3:  {
+    src: "/split/3SPLIT.png",
+    alt: "AZ Works"
 }
 ---
 

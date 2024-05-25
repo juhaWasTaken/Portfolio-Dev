@@ -6,12 +6,20 @@ category: Branding
 year: 2023
 link: https://innovabank.framer.website/
 image:  {
-    src: "/images/innova.png",
-    alt: "Login screen InnovaBank"
+    src: "/innova/landinINN.png",
+    alt: "Home page HotelBlog"
 }
 image1:  {
-    src: "/images/innova-1.png",
-    alt: "Home page InnovaBank"
+    src: "/innova/hpmbINN.png",
+    alt: "Pages mobile"
+}
+image2:  {
+    src: "/innova/lockINN.png",
+    alt: "Different mobile pages"
+}
+image3:  {
+    src: "/innova/ftrINN.png",
+    alt: "AZ Works"
 }
 ---
 
