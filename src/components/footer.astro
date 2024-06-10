@@ -1,12 +1,14 @@
 ---
-
+import { getI18n } from '../i18n';
+const { currentLocale } = Astro;
+const i18n = getI18n({currentLocale});
 ---
 
 <footer class="px-5 pb-[60px] pt-[30px] flex ">
     <h3 class="font-bold text-[16px] text-white uppercase w-[25%] tracking-[-.04em] footer-tlt"><a href="/">Carlos Gallaga</a></h3>
 
     <div class="footer flex justify-between w-full">
-        <p class="portfolio text-white text-[16px] uppercase font-normal tracking-[-.04em]">Portfolio 2024</p>
+        <p class="portfolio text-white text-[16px] uppercase font-normal tracking-[-.04em]">{i18n.NAV_PORTFOLIO}</p>
 
         <a class="text-[16px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal hover:text-white" href="https://www.linkedin.com/in/carlos-gallaga" target="_blank">LinkedIn</a>
     </div>

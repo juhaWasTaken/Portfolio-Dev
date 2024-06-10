@@ -1,0 +1,27 @@
+---
+import { languages } from "../i18n/ui";
+import { useTranslatedPath, getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const {class: className} = Astro.props;
+---
+
+
+{
+  Object.entries(languages).map(([langPrefix, label]) => {
+    if(langPrefix == lang ) return <></> 
+    return (<a class="portfolio text-[#B3B3B3] text-[16px] uppercase font-normal tracking-[-.04em] hover:text-white" href={translatePath('/', langPrefix)}>{label}</a>)
+  })
+}
+
+<style>
+      @media (max-width: 809px) {
+        .portfolio {
+            display: none; /* Hides the text in small devices*/
+        }
+    }
+</style>
+
+
+

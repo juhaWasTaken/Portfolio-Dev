@@ -6,10 +6,16 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const { currentLocale } = Astro
+console.log({currentLocale});
+
+import { getLangFromUrl } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -22,9 +28,6 @@ const { title, description } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-
-	}
 	html {
 		background: #0F0F0F;
 		background-size: 224px;

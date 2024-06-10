@@ -1,72 +1,75 @@
 ---
-
+import { getI18n } from '../i18n';
+const { currentLocale } = Astro;
+const i18n = getI18n({currentLocale});
 ---
+
 <section id="about-me" class="flex flex-col gap-[100px] pt-[100px] border-b-[#333333] border-b-[1px] pb-[30px]">
     <section class="flex flex-col gap-[30px]">
-        <h2 class="abt-tlt font-semibold text-white uppercase text-[32px] tracking-[-.04em]">About me</h2>
-        <p class="abt-txt text-white text-[18px] tracking-[-.04em] leading-[1.2em] max-w-[550px]">Behind every design there is a designer with a vision. I'm Carlos Gallaga, a graphic designer passionate about UX/UI design, fueled by innovation and detail. <br> <br> I seek to understand the needs and desires of my clients to create websites that not only reflect their identity and vision, but also generate meaningful connections with their users.</p>
+        <h2 class="abt-tlt font-semibold text-white uppercase text-[32px] tracking-[-.04em]">{i18n.ABOUT_TITLE}</h2>
+        <p class="abt-txt text-white text-[18px] tracking-[-.04em] leading-[1.2em] max-w-[550px]">{i18n.ABOUT_DESC_1} <br> <br> {i18n.ABOUT_DESC_2} </p>
     </section>
     <section class="flex serv-sec">
         <div class="w-[25%]">
-            <p class="w-fit uppercase text-[#B3B3B3] text-[16px] tracking-[-.04em] leading-[1.2em] serv-tlt">Services</p>
+            <p class="w-fit uppercase text-[#B3B3B3] text-[16px] tracking-[-.04em] leading-[1.2em] serv-tlt">{i18n.SERVICES_TITLE}</p>
         </div>
 
         <div class="flex w-full servs-txt">
             <div class="flex flex-col w-[37%] gap-5 txts-svs">
-                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web Design</p>
-                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Branding</p>
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.SERVICE_1}</p>
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.SERVICE_2}</p>
             </div>
             <div class="flex flex-col w-[37%] gap-5 txts-svs">
-                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web Development</p>
-                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Product Design</p>
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.SERVICE_3}</p>
+                <p class="w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.SERVICE_4}</p>
             </div>
         </div>
     </section>
 
     <section class="flex exp-mob">
         <div class="w-[25%]">
-            <p class="w-fit uppercase text-[#B3B3B3] text-[16px] tracking-[-.04em] leading-[1.2em] exp-sec">Experience</p>
+            <p class="w-fit uppercase text-[#B3B3B3] text-[16px] tracking-[-.04em] leading-[1.2em] exp-sec">{i18n.EXPERIENCE_TITLE}</p>
         </div>
         <div class="w-full flex flex-col gap-5">
             <div class="flex border-b-[#333333] border-b-[1px] pb-5">
                 <div class="w-full flex expWor">
                     <div class="w-full">
-                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">UX/UI Designer</p>
+                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_PLACE_1}</p>
                     </div>
                     <div class="w-full">
-                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Freelancer</p>
+                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_ROLE_1}</p>
                     </div>
                 </div>
                 <div class="w-[33%]">
-                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">December 2023 - Currently</p>
+                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_DATE_1}</p>
                 </div>
             </div>
 
             <div class="flex border-b-[#333333] border-b-[1px] pb-5">
                 <div class="w-full flex expWor">
                     <div class="w-full">
-                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">JG & Servicios y Proyectos </p>
+                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_PLACE_2}</p>
                     </div>
                     <div class="w-full">
-                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web developer</p>
+                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_ROLE_2}</p>
                     </div>
                 </div>
                 <div class="w-[33%]">
-                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">April – November (2023)</p>
+                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_DATE_2}</p>
                 </div>
             </div>
 
             <div class="flex  pb-5">
                 <div class="w-full flex expWor">
                     <div class="w-full">
-                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Fryam AC</p>
+                        <p class=" w-fit text-white text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_PLACE_3}</p>
                     </div>
                     <div class="w-full">
-                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">Web Designer</p>
+                        <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_ROLE_3}</p>
                     </div>
                 </div>
                 <div class="w-[33%]">
-                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">January - March (2023)</p>
+                    <p class=" w-fit text-[#B3B3B3] text-[18px] tracking-[-.04em] leading-[1.2em] txt-secs">{i18n.EXPERIENCE_DATE_3}</p>
                 </div>
             </div>
             
