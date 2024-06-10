@@ -1,54 +1,23 @@
-# Astro Starter Kit: Basics
+# PORTFOLIO PROJECT
 
-```sh
-npm create astro@latest -- --template basics
-```
+![image](https://github.com/juhaWasTaken/Portfolio-Dev/assets/146664582/63998431-d012-4139-b309-a8dc13de83e3)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Introducción
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este portafolio es una recopilación de los proyectos en los que he trabajado durante los años 2023 y 2024. A través de este sitio web, muestro mi experiencia en diferentes proyectos de diseño web y desarrollo front-end.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tecnologías Utilizadas
 
-## 🚀 Project Structure
+- **Astro**: Framework moderno para construir sitios web rápidos y dinámicos.
+- **HTML**: Lenguaje de marcado para estructurar el contenido web.
+- **CSS**: Para el estilo y la presentación de las páginas web.
+- **Tailwind CSS**: Un framework CSS para crear diseños personalizados de manera rápida y eficiente.
+- **JavaScript**: Lenguaje de programación para agregar interactividad y funcionalidades dinámicas.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Características del Portafolio
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Trabajos Destacados**: Una sección dedicada a mostrar algunos de los proyectos más importantes en los que he trabajado.
+- **Disponibilidad**: Indicación de mi disponibilidad para nuevos proyectos.
+- **Detalles de Proyectos**: Información sobre mi experiencia y los servicios que ofrezco.
+- **Contacto**: Formulario de contacto para que los visitantes puedan ponerse en contacto conmigo fácilmente.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
