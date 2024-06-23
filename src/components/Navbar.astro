@@ -1,9 +1,9 @@
 ---
 import LanguajePicker from './LanguajePicker.astro';
-import { getI18n } from '../i18n';
+import { getI18n } from '@/i18n';
 const { currentLocale } = Astro;
 const i18n = getI18n({currentLocale});
-import { getLangFromUrl, useTranslations, useTranslatedPath  } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, useTranslatedPath  } from '@/i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
@@ -35,7 +35,7 @@ const translatePath = useTranslatedPath(lang);
         <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal hover:text-white" href="#projects">{t('nav.projects')}</a>
         <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6 hover:text-white" href="#about-me">{t('nav.about')}</a>
         <a class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6 hover:text-white" href="#contact">{t('nav.contact')}</a>
-        <LanguajePicker class="text-[14px] uppercase text-[#B3B3B3] tracking-[-.04em] font-normal ml-6 hover:text-white" />
+        <LanguajePicker  />
     </div>    
 </nav>
 

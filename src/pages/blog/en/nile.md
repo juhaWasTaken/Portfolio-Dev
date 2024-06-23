@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/workLayout.astro"
+layout: "@/layouts/workLayout.astro"
 title: Nile
 client: Freelance
 category: Design

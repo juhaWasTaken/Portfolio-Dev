@@ -2,6 +2,12 @@
 import { Image } from "astro:assets";
 const { frontmatter, url } = Astro.props;
 const {title, client, category, year, link, image, image1, image2, image3 } = frontmatter; 
+
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 ---
 
 <article>
@@ -16,6 +22,6 @@ const {title, client, category, year, link, image, image1, image2, image3 } = fr
             <p class="text-white text-[16px] tracking-[-.04em] leading-[1.2em]">{category}</p>
         </div>
     </div>
-    
+
 </article>
 

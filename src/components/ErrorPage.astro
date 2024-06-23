@@ -1,9 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 import Navbar from './Navbar.astro';
-import Header from './header.astro';
 
-import { getI18n } from '../i18n';
+import { getI18n } from '@/i18n';
 const { currentLocale } = Astro;
 const i18n = getI18n({currentLocale});
 ---

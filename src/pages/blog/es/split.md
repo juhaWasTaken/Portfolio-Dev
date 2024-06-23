@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/workLayout.astro"
+layout: "@/layouts/workLayout.astro"
 title: Split
 client: Freelance
 category: Design
@@ -23,4 +23,4 @@ image3:  {
 }
 ---
 
-For Split's homepage, I opted for a futuristic style using 3D elements and a dark color palette with touches of purple. This combination seeks to announce in an impactful way the launch of their new application, creating a visually appealing and modern experience.
+Para la página de inicio de Split, opté por un estilo futurista utilizando elementos 3D y una paleta de colores oscuros con toques morados. Esta combinación busca anunciar de forma impactante el lanzamiento de su nueva aplicación, creando una experiencia visualmente atractiva y moderna.

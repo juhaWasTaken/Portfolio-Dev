@@ -1,12 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Contact from '../components/contact.astro';
-import Footer from '../components/footer.astro';
+import Layout from '@/layouts/Layout.astro';
+import Navbar from '@/components/Navbar.astro';
+import Contact from '@/components/contact.astro';
+import Footer from '@/components/footer.astro';
 import { Image } from 'astro:assets';
 
 const { frontmatter } = Astro.props;
 const {title, client, category, year, link, image, image1, image2, image3 } = frontmatter; 
+
+import { getI18n } from '@/i18n';
+const { currentLocale } = Astro;
+const i18n = getI18n({currentLocale});
+
 ---
 
 <Layout title={title} description='¡Hola! Soy Carlos Gallaga, un apasionado diseñador gráfico especializado en UI/UX, y este es mi portafolio digital. Aquí podrás explorar y descubrir más sobre mis proyectos y habilidades.'>
@@ -18,7 +23,7 @@ const {title, client, category, year, link, image, image1, image2, image3 } = fr
 	<main class="px-5 text-white text-[18px]">
         <div class="w-full flex justify-between items-center gap-[60px] datos">
             <div class="desc-mob">
-                <h3 class="text-[#B3B3B3] uppercase tracking-[-.04em] text-[16px] mb-5 title-mob">Description</h3>
+                <h3 class="text-[#B3B3B3] uppercase tracking-[-.04em] text-[16px] mb-5 title-mob">{i18n.WKR_DESC}</h3>
                 <div class="max-w-[420px] text-lg tracking-[-.04em] leading-[1.2em] txt-mob">
                     <slot />
                 </div>
@@ -26,15 +31,15 @@ const {title, client, category, year, link, image, image1, image2, image3 } = fr
             
             <div class="flex flex-col gap-5 w-[50%] info-mob">
                 <div class="flex justify-between border-b-[1px] border-[#333333] pb-5">
-                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">Client</p>
+                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">{i18n.WRK_CLIENT}</p>
                     <p class="text-white text-lg leading-[1.2em] tracking-[-.04em] info-txts">{client}</p>
                 </div>
                 <div class="flex justify-between border-b-[1px] border-[#333333] pb-5">
-                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">Category</p>
+                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">{i18n.WRK_CATEGORY}</p>
                     <p class="text-white text-lg leading-[1.2em] tracking-[-.04em] info-txts">{category}</p>
                 </div>
                 <div class="flex justify-between border-b-[1px] border-[#333333] pb-5">
-                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">Year</p>
+                    <p class="text-[#B3B3B3] text-lg leading-[1.2em] tracking-[-.04em] info-txts">{i18n.WRK_YEAR}</p>
                     <p class="text-white text-lg leading-[1.2em] tracking-[-.04em] info-txts">{year}</p>
                 </div>
                 <div class="flex justify-between ">

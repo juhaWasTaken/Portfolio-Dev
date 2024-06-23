@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/workLayout.astro"
+layout: "@/layouts/workLayout.astro"
 title: HotelBlog
 client: Freelance
 category: Website

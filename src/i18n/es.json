@@ -28,6 +28,9 @@
     "CONTACT_TITLE": "Contacto",
     "CONTACT_DESC": "¿Tiene algún proyecto en mente? ¿Quieres que trabajemos juntos? Estoy aquí para escuchar, colaborar y crear soluciones de diseño que causen impacto.",
     "ERROR_DSC": "¡Ups! Parece que esta página no existe.",
-    "ERROR_TXT": "Regresar al Inicio"
-    
+    "ERROR_TXT": "Regresar al Inicio",
+    "WKR_DESC": "Descripción",
+    "WRK_CLIENT": "Cliente",
+    "WRK_CATEGORY": "Categoría",
+    "WRK_YEAR": "Año"
 }

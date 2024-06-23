@@ -1,16 +1,21 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Header from '../components/header.astro';
-import About from '../components/about.astro';
-import CardWork from '../components/cardWork.astro';
-import Contact from '../components/contact.astro';
-import Footer from '../components/footer.astro';
-const allWorks = await Astro.glob('../pages/blog/*.md');
+import Layout from '@/layouts/Layout.astro';
+import Navbar from '@/components/Navbar.astro';
+import Header from '@/components/header.astro';
+import About from '@/components/about.astro';
+import CardWork from '@/components/cardWork.astro';
+import Contact from '@/components/contact.astro';
+import Footer from '@/components/footer.astro';
 
 import { getI18n } from '../i18n';
 const { currentLocale } = Astro;
-const i18n = getI18n({currentLocale});
+const i18n = getI18n({ currentLocale });
+
+// Cargar todos los archivos Markdown
+const allWorks = await Astro.glob('../pages/blog/**/*.md');
+
+// Filtrar manualmente los archivos según el idioma
+const filteredWorks = allWorks.filter((work) => work.url && work.url.includes(`/blog/${currentLocale}/`));
 ---
 
 <Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
@@ -23,10 +28,13 @@ const i18n = getI18n({currentLocale});
 			<p class="font-semibold text-white text-[32px] tracking-[-.04em] uppercase">(2023 - 2024)</p>
 		</div>
 		<section class="work-lay grid grid-cols-2 grid-rows-3 gap-5 border-b-[1px] pb-[30px] border-b-[#333333]">
-
-			{
-				allWorks.map((work) => <CardWork frontmatter={work.frontmatter} url={work.url} />)
-			} 
+			
+            {
+                filteredWorks.map((work) => (
+                    <CardWork frontmatter={work.frontmatter} url={work.url} />
+                ))
+            }  
+			
 		</section>
 
 		<About />
